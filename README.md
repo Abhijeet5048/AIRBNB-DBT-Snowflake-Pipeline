@@ -8,7 +8,11 @@ It ingests raw data from S3, transforms it through layered models (bronze, silve
 ## 📊 Architecture
 ![Architecture Diagram](./AWS_DBT_Snowflake_Project/AIRBNB_Pipeline_Architectue.png)
 
+## 📊 dbt Model Lineage (End-to-End DAG)
 
+This lineage graph represents the end-to-end ELT pipeline, highlighting dependencies between staging, transformation layers, and final analytical models.
+
+![DBT Lineage](./dbt_lineage.jpeg)
 
 ---
 
