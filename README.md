@@ -12,7 +12,7 @@ It ingests raw data from S3, transforms it through layered models (bronze, silve
 
 This lineage graph represents the end-to-end ELT pipeline, highlighting dependencies between staging, transformation layers, and final analytical models.
 
-![DBT Lineage](./dbt_lineage.jpeg)
+![DBT Lineage](./DBT_Lineage.jpeg)
 
 ---
 
