@@ -6,14 +6,7 @@ It ingests raw data from S3, transforms it through layered models (bronze, silve
 ---
 
 ## 📊 Architecture
-
-S3 (Data Lake)
-↓
-Snowflake (Staging)
-↓
-dbt (Bronze → Silver → Gold)
-↓
-Analytics / Reporting
+![Architecture Diagram](./AWS_DBT_Snowflake_Project/AIRBNB_Pipeline_Architectue.png)
 
 
 
