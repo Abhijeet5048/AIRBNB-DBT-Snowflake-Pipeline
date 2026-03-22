@@ -1,52 +1,68 @@
 # Airbnb Data Engineering Pipeline (dbt + Snowflake + AWS S3)
 
-This project implements an end-to-end ELT pipeline using dbt, Snowflake, and AWS S3. 
-It ingests raw data from S3, transforms it through layered models (bronze, silver, gold), 
-and produces analytics-ready datasets.
+This project implements an end-to-end ELT pipeline using dbt, Snowflake, and AWS S3.  
+It ingests raw data from S3, transforms it through layered models (bronze, silver, gold), and produces analytics-ready datasets.
 
-## Architecture
+---
 
-S3 (Data Lake) → Snowflake (Staging) → dbt (Bronze → Silver → Gold) → Analytics
+## 📊 Architecture
 
-## Tech Stack
+S3 (Data Lake)
+↓
+Snowflake (Staging)
+↓
+dbt (Bronze → Silver → Gold)
+↓
+Analytics / Reporting
+
+
+
+---
+
+## 🛠 Tech Stack
 
 - dbt (data transformations)
 - Snowflake (data warehouse)
 - AWS S3 (data lake)
 - GitHub (version control)
 
-## Data Pipeline Layers
+---
 
-### Bronze Layer
+## 🧱 Data Pipeline Layers
+
+### 🥉 Bronze Layer
 - Raw ingestion from staging tables
-- Incremental loading using CREATED_AT
+- Incremental loading using `CREATED_AT`
 
-### Silver Layer
+### 🥈 Silver Layer
 - Data cleaning and standardization
-- Deduplication using window functions
+- Deduplication using window functions (`ROW_NUMBER`)
 - Business transformations using macros
 
-### Gold Layer
+### 🥇 Gold Layer
 - One Big Table (OBT) for analytics
-- Fact and dimension models
+- Fact and dimension models for reporting
 
-## Key Features
+---
+
+## 🚀 Key Features
 
 - Incremental data loading using dbt
-- Merge-based upsert strategy
+- Merge-based upsert strategy using unique keys
 - SCD Type 2 implementation using dbt snapshots
 - Reusable SQL using Jinja macros
 - Metadata-driven transformations
 - Data quality checks (error & warning based)
 
+---
 
-## How to Run
+## ▶️ How to Run
 
-bash
+```bash
 dbt run
 dbt test
 dbt snapshot
-
+```
 
 ## Key Learnings
 
