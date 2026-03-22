@@ -62,6 +62,9 @@ dbt snapshot
 - Designed incremental pipelines to handle large datasets
 - Implemented SCD Type 2 using dbt snapshots
 - Built layered data models (bronze, silver, gold)
+- Used macros and Jinja for reusable transformations
+- Debugged Snowflake SQL and dbt compilation issues
+
 
 ## 📈 Business Use Case
 
@@ -74,5 +77,3 @@ This pipeline enables analysis of:
 
 
 
-- Used macros and Jinja for reusable transformations
-- Debugged Snowflake SQL and dbt compilation issues
