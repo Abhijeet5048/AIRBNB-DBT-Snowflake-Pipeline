@@ -11,8 +11,8 @@ with hosts as
         HOST_NAME,
         HOST_SINCE,
         RESPONSE_RATE_QUALITY,
-        HOST_CREATED_AT
+        CREATED_AT as HOST_CREATED_AT,
     from
-        {{ ref('obt') }}
+        {{ ref('silver_hosts') }}
 )
 select * from hosts

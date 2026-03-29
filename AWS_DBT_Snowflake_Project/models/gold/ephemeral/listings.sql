@@ -13,8 +13,8 @@ with listings as
         CITY,
         COUNTRY,
         PRICE_PER_NIGHT_TAG,
-        LISTINGS_CREATED_AT
+        CREATED_AT as LISTINGS_CREATED_AT
     from
-        {{ ref('obt') }}
+        {{ ref('silver_listings') }}
 )
 select * from listings
