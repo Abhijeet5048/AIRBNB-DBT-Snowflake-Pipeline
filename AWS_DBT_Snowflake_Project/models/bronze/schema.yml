@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: bronze_bookings
+    columns:
+      - name: BOOKING_ID
+        tests:
+          - unique
+          - not_null
+      - name: BOOKING_DATE
+        tests:
+          - not_null
+      - name: BOOKING_AMOUNT
+        tests:
+          - not_null  
+
+      - name: LISTING_ID
+        tests:
+          - not_null

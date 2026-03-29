@@ -12,6 +12,6 @@ with bookings as
         BOOKING_STATUS,
         CREATED_AT
     from
-        {{ ref('obt') }}
+        {{ ref('silver_bookings') }}
 )
 select * from bookings

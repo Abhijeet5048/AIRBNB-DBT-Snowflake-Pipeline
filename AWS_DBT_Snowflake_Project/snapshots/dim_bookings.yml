@@ -1,3 +1,4 @@
+
 snapshots:
     - name: dim_bookings
       relation: ref('bookings')

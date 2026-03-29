@@ -16,3 +16,4 @@
         CREATED_AT
     from 
         {{ ref('bronze_bookings')}}
+
