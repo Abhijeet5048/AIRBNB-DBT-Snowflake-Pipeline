@@ -37,7 +37,7 @@ To handle historical changes in dimension data, this pipeline implements SCD Typ
 - This design enables point-in-time analysis without losing historical data
 ### Example Output
 
-![SCD2 Example](./SCD2_Example.png)
+![SCD2 Example](./SCD2_Example.jpeg)
 
 ### Explanation
 
